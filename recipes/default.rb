@@ -1,3 +1,5 @@
+include_recipe 'elasticsearch17'
+
 elasticsearch_version = `/usr/local/bin/elasticsearch -v | cut -f 1 -d , | cut -f 2 -d : | cut -f1-2 -d .`.strip
 
 case elasticsearch_version
